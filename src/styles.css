@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #bc3908;
+    --secondary-color: #e0cd72;
+    --black: #220901;
+    --white: #eef0f2;
+    --style-font: DenkOne;
+}
+
+@font-face {
+    font-family: "DenkOne";
+    src: url(./assets/fonts/DenkOne-Regular.ttf);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+/*/////////////////////// HEADER & NAVIGATION //////////////////////*/
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+#header #main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+button {
+    font-family: var(--style-font);
+    font-size: 1.5rem;
+    border: none;
+}
+
+#main-nav button {
+    background: none;
+    color: var(--white);
+}
+
+#secondary-nav button {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*/////////////////////// HOME PAGE ///////////////////////////////*/
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#content section {
+    flex: 1;
+}
+
+h1 {
+    font-family: var(--style-font);
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* hero section */
+#hero {
+    background-color: var(--primary-color);
+}
+
+/* values section */
+#values {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#values-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}

@@ -38,7 +38,7 @@ export default function loadHome() {
     valuesContent.appendChild(valuesText);
 
     valuesHeader.textContent = "VALUES"
-    valuesText.textContent = "At Bussin’ Burger Joint, we believe great food starts with passion and purpose. Our values are built on quality, freshness, and community — serving up handcrafted burgers made from locally sourced ingredients that hit the spot every time. We’re committed to fast, friendly service, creating a space where everyone feels welcome, and keeping it real, bold, and delicious. At Bussin’ Burger Joint, it’s not just a meal — it’s a vibe.";
+    valuesText.textContent = "At Bussin’ Burger Joint, we believe great food starts with passion and purpose. Our values are built on quality, freshness, and community — serving up handcrafted burgers made from locally sourced ingredients that hit the spot every time. We’re committed to fast, friendly service, creating a space where everyone feels welcome, and keeping it real, bold, and delicious. At Bussin’ Burger, it’s not just a meal — it’s a vibe.";
 
     // HOURS & LOCATION SECTION
     const locationSection = document.createElement("section")
@@ -89,8 +89,6 @@ export default function loadHome() {
             <h2>Midtown Manhattan</h2>
             <p>123 W 42nd St New York, NY 10036</p>
         </div>
-        
-        
     `
 
 }

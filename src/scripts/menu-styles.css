@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-h1 {
+#menu-container h1 {
     padding: 20px 0;
     width: 100%;
     text-align: center;
@@ -55,7 +55,6 @@ h1 {
 #card-container.toppings-card h2 {
     color: var(--white);
 }
-
 
 #card-content {
     text-align: center;

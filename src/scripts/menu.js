@@ -189,7 +189,7 @@ const sidesAndDrinks = [
     },
     {
         name: "Soft Drinks",
-        description: "Your choice of Coca-Cola, Ginger Ale, Root Beer, or water",
+        description: "Your choice of Coca-Cola, Ginger Ale, Dr. Pepper, Sprite, Root Beer, or Bottled Water",
         price: "+$3.00",
         image: softDrinksImg
     }

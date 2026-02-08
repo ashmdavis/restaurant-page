@@ -23,6 +23,15 @@ const footerAboutButton = document.querySelector("#footer-about");
 
 setActiveButton(homeButton);
 
+// HAMBURGER MENU
+const hameMenu = document.querySelector(".ham-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hameMenu.addEventListener("click", () => {
+    hameMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+});
+
 function linkButtons(buttons, callback, mainButton) {
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -32,10 +41,24 @@ function linkButtons(buttons, callback, mainButton) {
                 top: 0,
                 behavior: "smooth"
             });
+            hameMenu.classList.remove("active");
+            offScreenMenu.classList.remove("active");
         });
     });
 }
 
+// LINK ALL BUTTONS
 linkButtons([homeButton, footerHomeButton], loadHome, homeButton);
 linkButtons([menuButton, footerMenuButton], loadMenu, menuButton);
 linkButtons([aboutButton, footerAboutButton], loadAbout, aboutButton);
+
+// CHECK CLICK INSIDE OUR OUTSIDE HAMBURGER MENU
+document.addEventListener("click", (e) => {
+    const isClickInsideMenu = offScreenMenu.contains(e.target);
+    const isClickOnHam = hameMenu.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnHam) {
+        hameMenu.classList.remove("active");
+        offScreenMenu.classList.remove("active");
+    }
+});

@@ -47,6 +47,8 @@ export default function loadMenu() {
 
     const toppingSection = document.createElement("section");
     toppingSection.id = "topping-section";
+    const toppingContainer = document.createElement("div");
+    toppingContainer.id = "topping-container"
     const toppingHeader = document.createElement("h1")
     toppingHeader.id = "topping-header";
     toppingHeader.textContent = "Choose Your Toppings"
@@ -67,7 +69,8 @@ export default function loadMenu() {
         cardDesc.textContent = topping.description;
 
         menuContainer.appendChild(toppingSection);
-        toppingSection.appendChild(cardContainer);
+        toppingSection.append(toppingContainer)
+        toppingContainer.appendChild(cardContainer);
         cardContainer.appendChild(card);
         card.append(cardName, cardDesc);
 

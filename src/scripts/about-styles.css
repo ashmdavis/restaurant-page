@@ -44,6 +44,7 @@
     gap: 40px;
     text-align: center;
 }
+
 /*/////////////////////// CONTACT ///////////////////////////////*/
 #contact-section {
     background-color: var(--white);
@@ -61,7 +62,7 @@
     width: 100%;
     align-items: center;
     text-align: center;
-    
+
 }
 
 #contact-mobile :first-child,
@@ -70,6 +71,7 @@
     font-weight: bold;
     color: var(--black);
 }
+
 #contact-mobile :last-child,
 #contact-email :last-child,
 #contact-address :last-child {
@@ -84,4 +86,25 @@
     padding: 25px;
     margin: 0 10px;
     /* border-radius: 10px; */
+}
+
+@media screen and (max-width:800px) {
+    #about-section {
+        flex-direction: column;
+    }
+
+    #about-section h1,
+    #about-section img {
+        width: 325px;
+        text-align: right;
+        color: var(--white);
+    }
+
+    #our-story-content {
+        width: 350px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+    }
 }

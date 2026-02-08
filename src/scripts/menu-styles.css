@@ -81,11 +81,18 @@
 
 #topping-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+#topping-container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 10px;
-    background-color: var(--light-gray);
+    /* width: 100%; */
+    /* max-width: 1300px; */
 }

@@ -8,6 +8,7 @@
     --secondary-color: #e0cd72;
     --black: #220901;
     --white: #eef0f2;
+    --light-gray: #e4e3e3;
     --style-font: DenkOne;
 }
 
@@ -148,6 +149,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--light-gray);
 }
 
 #location-content {

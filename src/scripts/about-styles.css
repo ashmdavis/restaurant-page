@@ -51,6 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--light-gray);
 }
 
 #contact-content {
@@ -59,25 +60,28 @@
     justify-content: center;
     width: 100%;
     align-items: center;
+    text-align: center;
+    
 }
 
 #contact-mobile :first-child,
 #contact-email :first-child,
 #contact-address :first-child {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--black);
 }
 #contact-mobile :last-child,
 #contact-email :last-child,
 #contact-address :last-child {
     color: var(--black);
+    margin-top: 10px;
 }
 
 #contact-mobile,
 #contact-email,
 #contact-address {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     padding: 25px;
     margin: 0 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }

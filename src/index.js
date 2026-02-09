@@ -28,8 +28,15 @@ const hameMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 hameMenu.addEventListener("click", () => {
+    const isActive = offScreenMenu.classList.toggle("active");
     hameMenu.classList.toggle("active");
-    offScreenMenu.classList.toggle("active");
+
+    // prevents the ability to scroll when the menu is active
+    if (isActive) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
 });
 
 function linkButtons(buttons, callback, mainButton) {
@@ -43,6 +50,7 @@ function linkButtons(buttons, callback, mainButton) {
             });
             hameMenu.classList.remove("active");
             offScreenMenu.classList.remove("active");
+            document.body.style.overflow = "auto"; // restores window scroll ability
         });
     });
 }
@@ -60,5 +68,6 @@ document.addEventListener("click", (e) => {
     if (!isClickInsideMenu && !isClickOnHam) {
         hameMenu.classList.remove("active");
         offScreenMenu.classList.remove("active");
+        document.body.style.overflow = "auto"; // restores window scroll ability
     }
 });

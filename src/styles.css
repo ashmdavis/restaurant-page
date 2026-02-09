@@ -41,7 +41,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 0.75rem 2rem;
     box-sizing: border-box;
 }
@@ -216,7 +216,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     align-items: center;
 }
 

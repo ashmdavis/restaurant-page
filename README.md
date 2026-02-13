@@ -2,7 +2,7 @@
 
 This is webiste was created for a fake burger fastfood restauraunt called Bussin' Burger Joint. It was created for an assigment for The Odin Project curriculumn. This project was created to demonstrate the use of drynamic DOM manipulation and Webpack module bundling.
 
-Check out the live demo [here]().
+Check out the live demo [here](https://ashmdavis.github.io/restaurant-page/).
 
 **Built With:**
 - `JavaScript`

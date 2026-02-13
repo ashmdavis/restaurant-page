@@ -110,19 +110,19 @@ export default function loadMenu() {
 const customBurger = [
     {
         name: "Hamburger",
-        description: "Hand-formed, seasoned beef patty nestled in a toasted sesame bun, layered with fresh toppings and condiments of you choosing.",
+        description: "Hand-formed, seasoned beef patty nestled in a toasted sesame bun, layered with fresh toppings and condiments of your choosing.",
         price: "$9.75",
         image: hamburgerImg
     },
     {
         name: "Cheeseburger",
-        description: "American-style cheese melthed on seasoned beef patty nestled in a toasted sesame bun, layered with fresh toppings and condiments of you choosing.",
+        description: "American-style cheese melthed on seasoned beef patty nestled in a toasted sesame bun, layered with fresh toppings and condiments of your choosing.",
         price: "$10.75",
         image: cheeseburgerImg
     },
     {
         name: "Baconburger",
-        description: "Hand-formed, seasoned beef patty layered with crispy bacon and nestled in a toasted sesame bun, layered with fresh toppings and condiments of you choosing.",
+        description: "Hand-formed, seasoned beef patty layered with crispy bacon and nestled in a toasted sesame bun, layered with fresh toppings and condiments of your choosing.",
         price: "$12.75",
         image: baconburgerImg
     }
@@ -151,7 +151,7 @@ const toppings = [
     },
     {
         name: "Jalapeño Peppers",
-        description: "Fresh, hand-chopped jalapeño peppers for the spiciest bite. Ask to try grilled!"
+        description: "Fresh, hand-chopped jalapeño peppers for the spiciest bite."
     },
     {
         name: "Green Peppers",
@@ -180,13 +180,13 @@ const sidesAndDrinks = [
     },
     {
         name: "Bussin' Fries",
-        description: "Golden, crispy fries piled high with melted cheese, crispy bacon bits, green onions, and dizzled with sour cream for a bold.",
+        description: "Golden, crispy fries piled high with melted cheese, crispy bacon bits, green onions, and dizzled with sour cream.",
         price: "+$6.50",
         image: loadedFriesImg
     },
     {
         name: "Milkshakes",
-        description: "Your choice of a creamy vanillia, chololate or strawberry milkshake topped with whipcream and a fresh cherry.",
+        description: "Your choice of a creamy vanillia, chocolate or strawberry milkshake topped with whipcream and a fresh cherry.",
         price: "+$8.00",
         image: milkshakesImg
     },
